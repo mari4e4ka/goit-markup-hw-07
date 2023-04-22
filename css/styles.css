@@ -51,6 +51,10 @@ p {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Navigation */
 
 header::after {
@@ -821,17 +825,13 @@ footer .item:hover,
   margin-right: 8px;
 }
 
-.exemples .list {
+.exemples--list {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
 
-.exemples a {
-  text-decoration: none;
-}
-
-.exemples .item {
+.project {
   width: 370px;
   margin: 15px;
 
@@ -840,36 +840,37 @@ footer .item:hover,
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.exemples .item:hover,
-.exemples .item:focus {
+
+.project:hover,
+.project:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.exemples-container {
+.project--meta {
   padding: 20px 24px;
 }
 
-.exemple-title {
+.project--title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   text-decoration: none;
 }
 
-.exemple-descr {
+.project--type {
   font-size: 16px;
   line-height: 1.88;
   text-decoration: none;
   color: var(--main-text-color);
 }
 
-.exemples-overlay {
+.project--overlaj {
   position: relative;
   overflow: hidden;
 }
 
-.exemple-description {
+.project--description {
   position: absolute;
   bottom: -100%;
   left: 0;
@@ -890,15 +891,15 @@ footer .item:hover,
   transition: bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-a[href="project1"]:hover .exemple-description,
-a[href="project2"]:hover .exemple-description,
-a[href="project3"]:hover .exemple-description,
-a[href="project4"]:hover .exemple-description,
-a[href="project5"]:hover .exemple-description,
-a[href="project6"]:hover .exemple-description,
-a[href="project7"]:hover .exemple-description,
-a[href="project8"]:hover .exemple-description,
-a[href="project9"]:hover .exemple-description {
+a[href="project1"]:hover .project--description,
+a[href="project2"]:hover .project--description,
+a[href="project3"]:hover .project--description,
+a[href="project4"]:hover .project--description,
+a[href="project5"]:hover .project--description,
+a[href="project6"]:hover .project--description,
+a[href="project7"]:hover .project--description,
+a[href="project8"]:hover .project--description,
+a[href="project9"]:hover .project--description {
   bottom: 0;
 }
 
