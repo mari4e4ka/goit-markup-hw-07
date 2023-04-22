@@ -44,7 +44,7 @@ p {
   margin-bottom: 0;
 }
 
-.list {
+ul, ol {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
@@ -52,6 +52,7 @@ p {
 }
 
 a {
+  color: currentColor;
   text-decoration: none;
 }
 
@@ -454,31 +455,28 @@ header .contact-item {
 }
 
 /* Why we */
-.section.preference {
+.preference {
   padding-top: 94px;
 }
 
-.preference.list {
+.preference-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.preference.list .item:not(:nth-child(4n)) {
-  margin-right: 30px;
-}
-
-.preference.list .item:not(:nth-last-child(-n + 4)) {
-  margin-bottom: 30px;
-}
-
-.preference .item {
+.preference-list__item {
   width: 270px;
 }
 
-.icon-antenna,
-.icon-clock,
-.icon-diagram,
-.icon-astronaut {
+.preference-list__item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.preference-list__item:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 30px;
+}
+
+.preference-list__icon {
   width: 270px;
   height: 120px;
   padding: 25px 100px;
@@ -487,7 +485,7 @@ header .contact-item {
   margin-bottom: 30px;
 }
 
-.preference-title {
+.preference-list__title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -496,15 +494,15 @@ header .contact-item {
 
 /* What we do */
 
-.section.activity,
-.section.team,
-.section.clients,
+.activity,
+.team,
+.clients,
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.activity-title,
+.activity__title,
 .team-title,
 .clients-title,
 .contact-header {
@@ -515,24 +513,24 @@ header .contact-item {
   margin-bottom: 50px;
 }
 
-.activity-list {
+.activity {
+  position: relative;
+}
+
+.activity__list {
   display: flex;
   position: relative;
 }
 
-.activity-list .item {
+.activity__icon {
   display: block;
 }
 
-.activity-thumb {
-  position: relative;
-}
-
-.activity-thumb:not(:last-child) {
+.activity__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.activity-thumb::before {
+.activity__item::before {
   content: "";
   position: absolute;
   width: 370px;
@@ -541,7 +539,7 @@ header .contact-item {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.activity-deskr {
+.activity__deskr {
   position: absolute;
   bottom: 27px;
   width: 370px;
@@ -891,15 +889,7 @@ footer .item:hover,
   transition: bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-a[href="project1"]:hover .project__description,
-a[href="project2"]:hover .project__description,
-a[href="project3"]:hover .project__description,
-a[href="project4"]:hover .project__description,
-a[href="project5"]:hover .project__description,
-a[href="project6"]:hover .project__description,
-a[href="project7"]:hover .project__description,
-a[href="project8"]:hover .project__description,
-a[href="project9"]:hover .project__description {
+.project__link:hover .project__description {
   bottom: 0;
 }
 
