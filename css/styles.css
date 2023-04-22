@@ -825,7 +825,7 @@ footer .item:hover,
   margin-right: 8px;
 }
 
-.exemples--list {
+.exemples__list {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
@@ -847,30 +847,30 @@ footer .item:hover,
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project--meta {
+.project__meta {
   padding: 20px 24px;
 }
 
-.project--title {
+.project__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   text-decoration: none;
 }
 
-.project--type {
+.project__type {
   font-size: 16px;
   line-height: 1.88;
   text-decoration: none;
   color: var(--main-text-color);
 }
 
-.project--overlaj {
+.project__overlaj {
   position: relative;
   overflow: hidden;
 }
 
-.project--description {
+.project__description {
   position: absolute;
   bottom: -100%;
   left: 0;
@@ -891,15 +891,15 @@ footer .item:hover,
   transition: bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-a[href="project1"]:hover .project--description,
-a[href="project2"]:hover .project--description,
-a[href="project3"]:hover .project--description,
-a[href="project4"]:hover .project--description,
-a[href="project5"]:hover .project--description,
-a[href="project6"]:hover .project--description,
-a[href="project7"]:hover .project--description,
-a[href="project8"]:hover .project--description,
-a[href="project9"]:hover .project--description {
+a[href="project1"]:hover .project__description,
+a[href="project2"]:hover .project__description,
+a[href="project3"]:hover .project__description,
+a[href="project4"]:hover .project__description,
+a[href="project5"]:hover .project__description,
+a[href="project6"]:hover .project__description,
+a[href="project7"]:hover .project__description,
+a[href="project8"]:hover .project__description,
+a[href="project9"]:hover .project__description {
   bottom: 0;
 }
 
