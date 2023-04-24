@@ -60,49 +60,49 @@
       <div class="overlay">
         <section class="hero">
           <div class="container">
-            <h1 class="hero-title"> Ефективні рішення для вашого бізнесу</h1>
+            <h1 class="hero__title"> Ефективні рішення для вашого бізнесу</h1>
             <div class="backdrop is-hidden" data-modal>
               <div class="modal">
                 <button class="button-close" data-modal-close></button>
                  <form class="main-form" autocomplete="off">
-                  <p class="main-form-title">Залиште свої дані, ми вам передзвонимо</p>
-                  <div class="main-form-item">
-                    <label class="main-form-label">
+                  <p class="main-form__title">Залиште свої дані, ми вам передзвонимо</p>
+                  <div class="main-form__item">
+                    <label class="main-form__label">
                       Ім'я
-                      <input type="text" name="name" class="main-form-input" placeholder=" " required>
-                      <svg class="main-form-icon">
+                      <input type="text" name="name" class="main-form__input" placeholder=" " required>
+                      <svg class="main-form__icon">
                         <use href="./images/sprite-form.svg#icon-person-form"></use>
                       </svg>
                     </label>
                   </div>
-                  <div class="main-form-item">
-                    <label class="main-form-label">
+                  <div class="main-form__item">
+                    <label class="main-form__label">
                       Телефон
-                      <input type="tel" name="phone" class="main-form-input" placeholder=" " required>
-                      <svg class="main-form-icon">
+                      <input type="tel" name="phone" class="main-form__input" placeholder=" " required>
+                      <svg class="main-form__icon">
                         <use href="./images/sprite-form.svg#icon-phone-form"></use>
                       </svg>
                     </label>
                   </div>
-                  <div class="main-form-item">
-                    <label class="main-form-label">
+                  <div class="main-form__item">
+                    <label class="main-form__label">
                       Пошта
-                      <input type="email" name="mail" class="main-form-input" placeholder=" " required>
-                      <svg class="main-form-icon">
+                      <input type="email" name="mail" class="main-form__input" placeholder=" " required>
+                      <svg class="main-form__icon">
                         <use href="./images/sprite-form.svg#icon-email-form"></use>
                       </svg>
                     </label>
                   </div>
 
                   <label>Коментар
-                    <textarea name="coment" class="coment" placeholder="Введіть текст"></textarea>
+                    <textarea name="coment" class="main-form__coment" placeholder="Введіть текст"></textarea>
                   </label>
                   
                   <label class="agreement">
-                    <input type="checkbox" name="agreement" class="agreement-input">
-                    <img src="./images/Vector.svg"  class="vector">
+                    <input type="checkbox" name="agreement" class="agreement__input">
+                    <img src="./images/Vector.svg"  class="agreement__icon">
                     </img>
-                    Погоджуюся з розсилкою та приймаю <a href="" class="agreement-link"><span class="accent">Умови договору</span></a>
+                    Погоджуюся з розсилкою та приймаю <a href="" class="agreement__link">Умови договору</span></a>
                   </label>
 
                  <button type="submit" class="button main-form__button">Відправити</button>
@@ -417,23 +417,23 @@
             <address class="footer-info__address">м. Київ, пр-т Лесі Українки, 26</address>
 
             <div class="footer-info__contact">
-              <a href="mailto:info@devstudio.com" class="contact-item"
+              <a href="mailto:info@devstudio.com" class="footer-info__link"
                 >info@devstudio.com</a
               >
             </div>
             <div class="footer-info__contact">
-              <a href="tel:+380961111111" class="contact-item"
+              <a href="tel:+380961111111" class="footer-info__link"
                 >+38 096 111 11 11</a
               >
             </div>
           </div>
-          <div class="joinus">
-            <p class="join">приєднуйтесь</p>
-            <ul class="join-items list">
-              <li class="item">
+          <div class="join">
+            <p class="join__title">приєднуйтесь</p>
+            <ul class="join__list">
+              <li class="join__item">
                 <a href="https://www.instagram.com/"
                   ><img
-                    class="smlink"
+                    class="join__link"
                     src="./images/instagram.svg"
                     alt="Instagram link"
                     width="20"
@@ -441,10 +441,10 @@
                   />
                 </a>
               </li>
-              <li class="item">
+              <li class="join__item">
                 <a href="https://twitter.com/"
                   ><img
-                    class="smlink"
+                    class="join__link"
                     src="./images/twitter.svg"
                     alt="Twitter link"
                     width="20"
@@ -452,10 +452,10 @@
                   />
                 </a>
               </li>
-              <li class="item">
+              <li class="join__item">
                 <a href="https://www.facebook.com/"
                   ><img
-                    class="smlink"
+                    class="join__link"
                     src="./images/facebook.svg"
                     alt="Facebook link"
                     width="20"
@@ -463,10 +463,10 @@
                   />
                 </a>
               </li>
-              <li class="item">
+              <li class="join__item">
                 <a href="https://www.linkedin.com/"
                   ><img
-                    class="smlink"
+                    class="join__link"
                     src="./images/linkedin.svg"
                     alt="LinkedIn link"
                     width="20"
@@ -477,11 +477,11 @@
             </ul>
           </div>
           <form class="subscribe">
-              <label for="email" class="subscribe-item">Підпишіться на розсилку</label>
-              <input type="email" name="email" id="email" placeholder="E-mail">
-              <button type="submit" class="button">
+              <label class="subscribe__label">Підпишіться на розсилку
+              <input type="email" class="subscribe__input" id="email" placeholder="E-mail"></label>
+              <button type="submit" class="button subscribe__button">
                 Підписатися
-                <svg class="icon-send">
+                <svg class="subscribe__icon">
                   <use href="./images/sprite.svg#icon-send"></use>
                 </svg>
               </button>
